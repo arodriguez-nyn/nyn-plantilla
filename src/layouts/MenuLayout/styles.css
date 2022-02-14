@@ -1,0 +1,11 @@
+.layout {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: var(--header-height);
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.menu--show {
+    margin-left: 230px;
+}

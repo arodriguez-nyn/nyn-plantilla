@@ -1,0 +1,11 @@
+.footer-start {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}

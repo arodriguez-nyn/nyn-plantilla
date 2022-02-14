@@ -1,0 +1,41 @@
+.layout {
+    margin-right: 60px;
+    margin-left: 0;
+    margin-top: var(--header-height);
+    overflow: hidden;
+    padding-top: 1.5rem;
+}
+
+.expeju-nav {
+    position: fixed;
+    height: 100vh;
+    margin: 10px;
+    top: var(--header-height);
+    right: 0;
+}
+
+.expeju-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expeju-menu__icon {
+    font-size: 1.5rem;
+}
+
+.nav-link-expeju {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    color: var(--default-color);
+}
+
+.nav-link-expeju:hover {
+    cursor: pointer;
+    color: var(--primary-yellow);
+}
+
+.menu--show {
+    margin-left: 230px;
+}
