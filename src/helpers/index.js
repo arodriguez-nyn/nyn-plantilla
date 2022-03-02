@@ -35,3 +35,32 @@ export const autoFitCells = jsonObject => {
     }
     return objectMaxLength
 }
+
+/** Ordenación de array de objetos mostrados en las listas de datos */
+export const ordenaArray = order => {
+    return function innerSort(a, b) {
+        let direccion = 'asc',
+            key = order
+        const indexDescending = order.indexOf(' DESC')
+        if (indexDescending > 0) {
+            key = order.substring(0, indexDescending)
+            direccion = 'desc'
+        }
+
+        if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+            /** No existe la propiedad del objeto */
+            return 0
+        }
+
+        const varA = typeof a[key] === 'string' ? a[key].toUpperCase() : a[key]
+        const varB = typeof b[key] === 'string' ? b[key].toUpperCase() : b[key]
+
+        let comparison = 0
+        if (varA > varB) {
+            comparison = 1
+        } else if (varA < varB) {
+            comparison = -1
+        }
+        return direccion === 'desc' ? comparison * -1 : comparison
+    }
+}

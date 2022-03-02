@@ -1,8 +1,15 @@
 .contenedor-filtro {
+    flex-direction: column;
     margin-bottom: 1rem;
     color: var(--font-color);
     border: 1px solid var(--light-green);
     padding: 0.5rem;
+}
+
+.contenedor-filtro__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contenedor-filtro__header {
@@ -11,7 +18,7 @@
     align-items: center;
     height: 1rem;
     margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .contendor-filtro__h1 {
@@ -37,11 +44,46 @@
 .contenedor-filtro__footer {
     display: flex;
     justify-content: flex-end;
-    margin-top: 0;
+    margin-top: 1rem;
     border-bottom: 2px solid var(--primary-green);
     padding-bottom: 1rem;
 }
 
 .contenedor-filtro__last-btn {
     margin-left: 0.25rem;
+}
+
+.form-filter__input {
+    margin-top: 10px;
+}
+
+.incluir-alquiladas {
+    display: flex;
+    align-items: center;
+}
+
+.incluir-alquiladas__label {
+    line-height: 24px;
+}
+
+.viviendas-terciarios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.viviendas-terciarios_grupo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.viviendas-terciarios__label {
+    font-size: 1.1rem;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.viviendas-terciarios__input {
+    cursor: pointer;
 }

@@ -32,7 +32,6 @@ export const contarRegistros = (filtro, tabla) => {
     return conectar().then(() => {
         const jsdo = new progress.data.JSDO({ name: tabla })
         const ablFilter = { filter: filtro }
-
         return jsdo.invoke('count', ablFilter).then(
             jsdo => {
                 if (jsdo.success) {
